@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome', ['title' => 'Belajar Laravel dan Git - Takanome']);
+    return view('welcome', ['title' => 'Belajar Laravel dan Git - Takanome', 'Deskripsi'=> '03/01-2022 Belajar menggunakan Git dan belajar Framework Laravel 9. Gassssss......']);
 });
 
 Route::get('/greeting', function () {
