@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome', ['title' => 'Belajar Laravel - MAD']);
+    return view('welcome', ['title' => 'Belajar Laravel dan Git - Takanome']);
 });
 
 Route::get('/greeting', function () {
