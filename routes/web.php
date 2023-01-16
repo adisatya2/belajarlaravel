@@ -22,6 +22,7 @@ Route::get('home', function () {
 
 Route::get('edulevels', 'App\Http\Controllers\EdulevelController@data');
 Route::get('edulevels/add', 'App\Http\Controllers\EdulevelController@add');
+Route::post('edulevels', 'App\Http\Controllers\EdulevelController@process');
 
 
 
