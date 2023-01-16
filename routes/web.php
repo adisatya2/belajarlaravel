@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,9 +13,20 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome', ['title' => 'Belajar Laravel dan Git - Takanome', 'Deskripsi'=> '03/01-2022 Belajar menggunakan Git dan belajar Framework Laravel 9. Gassssss......']);
+    return view('welcome', ['title' => 'Belajar Laravel dan Git - Takanome', 'Deskripsi' => '03/01-2022 Belajar menggunakan Git dan belajar Framework Laravel 9. Gassssss......']);
 });
 
+Route::get('home', function () {
+    return view('home');
+});
+
+Route::get('edulevels', 'App\Http\Controllers\EdulevelController@data');
+Route::get('edulevels/add', 'App\Http\Controllers\EdulevelController@add');
+
+
+
+
+//testing belajar route
 Route::get('/greeting', function () {
     return 'Hello World';
 });
